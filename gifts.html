@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gifts For You 🎁</title>
+  <title>Your Gifts 🎁</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
-    <h1>Yayyyy 💖 Choose Your Surprise 🎁</h1>
+    <h1>Pick a Gift Box 🎀💖</h1>
+    <p style="color:white; font-size:20px;">
+      Click one to open your surprise
+    </p>
 
-    <button onclick="location.href='panipuri.html'">
-      🥙 Pani Puri For Life
-    </button>
+    <!-- Gift Boxes -->
+    <div class="gift-grid">
 
-    <button onclick="location.href='letter.html'">
-      💌 Love Letter
-    </button>
+      <div class="present-box" onclick="openGift('panipuri.html','🥙 Pani Puri!')">
+        🎁
+      </div>
 
-    <button onclick="location.href='photos.html'">
-      📸 Our Memories
-    </button>
+      <div class="present-box" onclick="openGift('letter.html','💌 A Love Letter!')">
+        🎁
+      </div>
+
+      <div class="present-box" onclick="openGift('photos.html','📸 Our memoriess')">
+        🎁
+      </div>
+
+    </div>
+
+    <!-- Surprise Reveal -->
+    <div id="giftReveal" class="gift-reveal">
+      <h2 id="giftText"></h2>
+      <button id="giftBtn">Open Gift ➡</button>
+    </div>
+
+    <br>
+    <button onclick="location.href='index.html'">⬅ Back</button>
   </div>
 
+  <script src="gifts.js"></script>
 </body>
 </html>

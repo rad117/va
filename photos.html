@@ -4,22 +4,29 @@
   <title>Our Memories 📸</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
     <h1>Our Memories Together 💖</h1>
 
-    <p style="color:white; font-size:20px;">
-      yayy😍
-    </p>
+    <!-- Slideshow Box -->
+    <div class="slideshow-container">
 
-    <images src="image1.jpg" width="200" style="border-radius:20px;">
-    <images src="image2.jpg" width="200" style="border-radius:20px;">
-    <images src="image3.jpg" width="200" style="border-radius:20px;">
+      <img id="slideImage" src="images/image1.jpg" class="slide">
 
-    <br><br>
+      <!-- Buttons -->
+      <div class="slide-buttons">
+        <button onclick="prevSlide()">⬅ Prev</button>
+        <button onclick="nextSlide()">Next ➡</button>
+      </div>
+
+    </div>
+
+    <br>
     <button onclick="location.href='gifts.html'">⬅ Back</button>
   </div>
 
+  <script src="slideshow.js"></script>
 </body>
 </html>
